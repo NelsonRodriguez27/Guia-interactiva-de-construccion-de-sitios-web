@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventura Web: El Constructor de Sitios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Aventura Web: El Constructor de Sitios</h1>
+        <p id="instructions">¡Bienvenido/a, futuro/a desarrollador/a web! Responde a las preguntas para dominar HTML y CSS. ¡Tu conocimiento es tu herramienta más poderosa!</p>
+
+        <div id="question-area">
+            <h2 id="level-title"></h2>
+            <p id="question-text"></p>
+            <textarea id="user-answer" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
+            <button id="submit-btn">Comprobar Respuesta</button>
+            <button id="next-btn" style="display: none;">Siguiente Pregunta</button>
+            
+            <div id="feedback-area" style="display: none;">
+                <p id="feedback-message"></p>
+                <p id="correct-answer-display" style="font-weight: bold;"></p>
+            </div>
+        </div>
+
+        <div id="game-over-screen" style="display: none;">
+            <h2>¡Aventura Terminada!</h2>
+            <p id="final-score"></p>
+            <button id="restart-btn">Jugar de Nuevo</button>
+        </div>
+
+        <div id="progress-area">
+            <p>Progreso: <span id="current-q-index">0</span> / <span id="total-q">0</span></p>
+            <p>Puntos: <span id="score">0</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
